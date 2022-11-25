@@ -39,7 +39,11 @@ public class Main {
         for (int i = 0; i < 4000; i++) {
             personA = osoby.get(getRandomInt(osoby.size()));
             personB = osoby.get(getRandomInt(osoby.size()));
+            //null pointer exception prevention: case: osoby.size == 0, returns null
+            //if(personA == null || personB == null) break;
             personA.donateBlood(personB);
+            //alt approach ;)
+            //personA.bloodType.canBeDonatedAlternated(personB.bloodType);
             if(personA.bloodCap == 0)osoby.remove(personA);
         }
         System.out.println("Zbýva dárců: " + osoby.size());

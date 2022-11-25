@@ -32,6 +32,7 @@ public class Osoba {
      * @return true if this person is compatible (is able to donate blood) to the 2nd person
      */
     boolean canDonate(BloodTypes bt) {
+        //H.B.: great approach! instant resolution using only one compare and Boole algebra at that
         return (this.bloodType.compNum % bt.compNum == 0);
     }
 
