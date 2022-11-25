@@ -17,7 +17,7 @@ public enum BloodTypes {
     final int compNum;
 
     /**
-     * @param type název krevní skupiny ve tvaru Napr: A-
+     * @param type "short name of a blood group E.g.: O+"
      * @return enumized bloodType
      */
     public static String getEnumByString(String type) {
