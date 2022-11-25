@@ -1,5 +1,5 @@
 public enum BloodTypes {
-    O_MINUS("O-", 900),
+    O_MINUS("O-", 30),
     O_PLUS("O+", 15),
     B_MINUS("B-", 10),
     B_PLUS("B+", 5),
